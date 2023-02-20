@@ -1,1 +1,28 @@
-site_name: My Docs
+site_name: fanta's snippets
+site_url: https://spezifanta.github.io/snippets
+repo_url: https://github.com/spezifanta/snippets
+edit_uri: blob/main/docs/
+
+nav:
+ - Home: index.md
+ - Traefik: traefik.md
+theme:
+  name: material
+  language: en
+  palette:
+    primary: light green
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - content.action.edit
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+
+extra:
+  homepage: https://spezifanta.github.io/snippets
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/spezifanta/snippets
+      name: fanta's snippets on GitHub.com

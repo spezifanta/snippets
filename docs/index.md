@@ -1,21 +1,9 @@
-# Welcome to MkDocs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Home
 
-## Commands
+Welcome to my private snippets collection. My name is Alex and I work as a software developer. 
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Because I find myself having to do the same things over and over again, it made sense to take notes.
+After sharing my notes with more and more friends and colleagues, I thought why not take it a step further and publish them on GitHub.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-
-### Remove Response Header
-
+Maybe someone else will find something useful or can even contribute or give feedback.
