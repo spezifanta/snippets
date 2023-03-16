@@ -29,7 +29,6 @@ This will automatically redirect `https://example.com/foo` to `https://exmaple.c
 !!! tip
     For other RegEx examples visit the [RegEx101.com](https://regex101.com/r/wY4bFu/) playground.
 
-
 ## Headers
 
 ### Remove response header
@@ -72,6 +71,25 @@ services:
       - "--entrypoints.web.address=:80"
       - "--entrypoints.web.http.middlewares=hostname@file"
 ```
+
+## Query Parameters
+
+### Removing a Query Parameter
+
+To remove a parameter named `_pat` this can be done by using the redirectRegex middleware:
+
+```yaml
+http:
+  middlewares:
+    remove-parameter:
+      redirectRegex:
+        regex: "^(.+)(_pat=\\w+)(.*)"
+        replacement: "${1}${3}"
+```
+
+!!! warn
+    This causes an additional redirect, which negatively affects the overall performance of your application. Major search engines will downgrade your search ranking, as this is considered a poor user experience.
+
 
 ## mitmproxy 
 
