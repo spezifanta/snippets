@@ -120,3 +120,19 @@ services:
 ```
 
 This will launch the proxy which can be accessed from `exmaple.com`. The mitmproxy web UI can be accessed by `proxy.example.com`.
+
+## Reverse Proxy
+
+```yaml
+http:
+  routers:
+    cups:
+      rule: Host(`cups.example.com`)
+      service: cups
+
+  services:
+    cups:
+      loadBalancer:
+        servers:
+          - url: 'http://localhost:631'
+```
